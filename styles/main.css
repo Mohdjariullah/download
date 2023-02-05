@@ -1,5 +1,6 @@
 body {
-  /* background-image: url('assets/head_image.png')!important; */
+  background-size: cover!important;
+  background-image: url('assets/head_image.png')!important;
   background: #121212;
   background-color: #121212!important;
 }
