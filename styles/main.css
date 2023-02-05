@@ -1,6 +1,7 @@
 body {
+  background-image: url('assets/head_image.png')!important;
   background: #121212;
-  background-image: url('assets/head_image.png');
+  background-color: #121212!important;
 }
 
 thead {
