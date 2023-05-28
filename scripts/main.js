@@ -20,7 +20,8 @@ const extractAssets = (data) => {
       armeabi: release.assets.find(asset => asset.name.toLowerCase().includes("armeabi")),
       universal: release.assets.find(asset => asset.name.toLowerCase().includes("universal") || asset.name.toLowerCase().includes("fat")),
       ios: release.assets.find(asset => asset.name.toLowerCase().includes("ios")),
-      windows: release.assets.find(asset => asset.name.toLowerCase().includes("windows"))
+      macos: release.assets.find(asset => asset.name.toLowerCase().includes("macos")),
+      windows: release.assets.find(asset => asset.name.toLowerCase().includes("windows")),
     };
   });
   return assets;
