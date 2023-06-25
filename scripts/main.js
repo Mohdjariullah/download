@@ -1,4 +1,4 @@
-const repo = 'Sangwan5688/BlackHole';
+const repo = 'mohdjariullah/cipher';
 const endpoint = `https://api.github.com/repos/${repo}/releases`;
 
 const getReleaseData = async() => {
@@ -32,7 +32,7 @@ window.onload = async() => {
   const tableBody = document.querySelector('.table-body');
   try {
     if (releaseData.message) {
-      tableBody.innerHTML = `<tr><td colspan="7" class="text-center">${releaseData.message.split("(")[0]} You can still check latest release on <a href="https://github.com/sangwan5688/blackHole/releases/latest/">GitHub</a></td></tr>`;
+      tableBody.innerHTML = `<tr><td colspan="7" class="text-center">${releaseData.message.split("(")[0]} You can still check latest release on <a href="https://github.com/mohdjariullah/cipher/releases/latest/">GitHub</a></td></tr>`;
       return;
     } else {
       const finalData = await extractAssets(releaseData);
@@ -62,6 +62,6 @@ window.onload = async() => {
       tableBody.innerHTML = finalHtml;
     }
   } catch (error) {
-    tableBody.innerHTML = `<tr><td colspan="7" class="text-center">Failed to load data. You can still check latest release on <a href="https://github.com/sangwan5688/blackHole/releases/latest/">GitHub</a></td></tr>`;
+    tableBody.innerHTML = `<tr><td colspan="7" class="text-center">Failed to load data. You can still check latest release on <a href="https://github.com/mohdjariullah/cipher/releases/latest/">GitHub</a></td></tr>`;
   }
 }
